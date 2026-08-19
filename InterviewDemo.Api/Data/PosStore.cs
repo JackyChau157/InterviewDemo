@@ -4,7 +4,7 @@ namespace InterviewDemo.Api.Data;
 
 public sealed class PosStore
 {
-    public List<Product> Products { get; } = [];
+    public List<Product> Products { get; } = []; 
     public List<Ticket> Tickets { get; } = [];
     public List<TicketLine> Lines { get; } = [];
     public List<Payment> Payments { get; } = [];
