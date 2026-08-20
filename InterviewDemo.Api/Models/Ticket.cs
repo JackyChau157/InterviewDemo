@@ -14,4 +14,5 @@ public sealed class Ticket
 
     public List<TicketLine> Lines { get; set; } = [];
     public List<Payment> Payments { get; set; } = [];
+
 }

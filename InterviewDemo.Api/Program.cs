@@ -1,4 +1,6 @@
 using InterviewDemo.Api.Data;
+using InterviewDemo.Api.Intefaces;
+using InterviewDemo.Api.Services;
 using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -10,6 +12,8 @@ builder.Services.AddControllers().AddJsonOptions(options =>
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddSingleton<PosStore>();
+
+builder.Services.AddScoped<ITicketService, TicketService>();
 
 var app = builder.Build();
 
